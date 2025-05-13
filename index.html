@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dragon Repeller</title>
+  <script defer src="script.js"></script> 
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+  <div class="bg-gray-800 border-4 border-white p-6 rounded-lg w-full max-w-xl shadow-xl">
+    <div class="flex justify-between items-center mb-4">
+      <div><strong>XP:</strong> <span id="xpText">0</span></div>
+      <div><strong>Health:</strong> <span id="healthText">100</span></div>
+      <div><strong>Gold:</strong> <span id="goldText">50</span></div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-3 justify-center mb-4">
+      <button id="button1" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded font-bold">Go to store</button>
+      <button id="button2" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded font-bold">Go to cave</button>
+      <button id="button3" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded font-bold">Fight dragon</button>
+    </div>
+    <div id="text" class="bg-gray-700 p-4 rounded font-mono leading-relaxed">
+      Welcome to <strong>Dragon Repeller</strong>. Defeat the dragon stopping the townsfolk! Choose where to go using the buttons above.
+    </div>
+    <div id="monsterStats" class="bg-red-800 text-white mt-4 p-3 rounded hidden">
+      <p><strong>Monster:</strong> <span id="monsterName"></span></p>
+      <p><strong>Health:</strong> <span id="monsterHealth"></span></p>
+    </div>
+    <div id="restart_butt" class="flex flex-col md:flex-row gap-3 justify-center mb-4">
+        <button id="restart" class="bg-red-500 hover:bg-red-600 px-4 py-2 m-5 rounded font-bold">Restart</button>
+        <button id="inventory" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 m-5 rounded font-bold">Inventory</button>
+    </div>
+    
+  </div>
+</body>
+</html>
